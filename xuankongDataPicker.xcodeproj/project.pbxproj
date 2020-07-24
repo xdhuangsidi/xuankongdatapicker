@@ -14,6 +14,7 @@
 		D84D055824CAA4DC00625231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84D055724CAA4DC00625231 /* Assets.xcassets */; };
 		D84D055B24CAA4DC00625231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84D055924CAA4DC00625231 /* LaunchScreen.storyboard */; };
 		D84D055E24CAA4DC00625231 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D84D055D24CAA4DC00625231 /* main.m */; };
+		D8FB8E6D24CAB6C40075445C /* SwissEphemeris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FB8E6C24CAB6C40075445C /* SwissEphemeris.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D84D055A24CAA4DC00625231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D84D055C24CAA4DC00625231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D84D055D24CAA4DC00625231 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8FB8E6C24CAB6C40075445C /* SwissEphemeris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwissEphemeris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7A959F52ECAC90862776B6 /* Pods-xuankongDataPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xuankongDataPicker.debug.xcconfig"; path = "Target Support Files/Pods-xuankongDataPicker/Pods-xuankongDataPicker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8FB8E6D24CAB6C40075445C /* SwissEphemeris.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +50,7 @@
 		058A81CA197843389463456A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8FB8E6C24CAB6C40075445C /* SwissEphemeris.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -364,6 +368,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4G2389GG73;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/SwissEphemeris/**",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CHDatePickerView\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+				);
 				INFOPLIST_FILE = xuankongDataPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -391,6 +402,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4G2389GG73;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/SwissEphemeris/**",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CHDatePickerView\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+				);
 				INFOPLIST_FILE = xuankongDataPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
