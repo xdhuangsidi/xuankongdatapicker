@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08427136DA651C81F2B91B6C1B76A207 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CD17391A9A3F0CD626DD5E9F113BA4 /* MASConstraintMaker.m */; };
+		0BA22E584AC6A798475D0AE0DAD99342 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = B446F90EE6590A26CC9701D82BC09045 /* MASCompositeConstraint.m */; };
+		131823409B4A56E3B24074A3964C7E12 /* CHDatePickerViewHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 433E84FFAD721F1EF7A5C60A4021672C /* CHDatePickerViewHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		14D104F6BFA9AB44C20F08D17D97CF6D /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = C465729F060F6C12459E698FAFBC05ED /* MASViewAttribute.m */; };
+		162A9F0E144DEFF2372D32C44B8ECB7C /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = C12F6488595B5A0E5270EE75F3FE2344 /* MASViewConstraint.m */; };
+		1AAE978CCC63F733C5FD57D8B6614676 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7BC4539E60C5BF15ADAC616E2B256D /* MASConstraint.m */; };
+		1D9C357AB88A8FCEBF6A3F258FB5B9AD /* CHDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 104D9D9E2BC28C5D145EB3F5057EE9CE /* CHDatePickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		28B8FDB71DF43B5930551463FEDCE29D /* Pods-xuankongDataPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A21CF32F4D2A816C638424075DA29CE1 /* Pods-xuankongDataPicker-dummy.m */; };
+		2C6E4F559F0C6FB34267BA4A79C98383 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 79F104724D1382191B72B8A94C5B0BA4 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3F8F593CC620C13790140FE0775324C0 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A385DA1D2BDBE4D8764E3C4D69C5D8A8 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		40CA618AC2BF04FE3E3D10095CC838FC /* CHDatePickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03CEF71069FD354B243691B458653C23 /* CHDatePickerView-dummy.m */; };
+		431D0D1488E3FE45DBEB62F384810586 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = DC52F4E55733DF4158E8463730DFA28B /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		54604C86408F1C8604EE24B784B4F8AE /* CHDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B300F552CCD4D74DBF14AC5335B91A76 /* CHDatePickerView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5DB13EC969590B7B8F3DE013BF4CC8E6 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 75AFD98A6A1E5BE0060168AD5C5AE0DA /* ViewController+MASAdditions.m */; };
+		625DC3FF19C25B82E02C4B28F0AB9F6D /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C8D94B1B115E60B42967A0F14B7586 /* View+MASAdditions.m */; };
+		6B3545D7FDF4347D1C13B01465E980A7 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 82976B6321D170986AEBB0C2CBEC7770 /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6D2BC7620D3CE8657A5B91BEF49A5312 /* NSBundle+CHDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = FCDF39F19B4FA0BBC7F29B4F2CFB26B4 /* NSBundle+CHDatePickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		733719C9D53FAFF1B7E90A6112607323 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A53B096782B6DF4422AD584963AA2CC /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		757486D76638790C6D34116927E6DB53 /* CHPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96DF315AAEDE0E495F4F43881792DF37 /* CHPickerView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7A24364252B05317459A8B514907F5C3 /* NSBundle+CHDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89A6181793C149E7F78384A7B2999F65 /* NSBundle+CHDatePickerView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8742C168AB15CDA84F2D36F108D150EE /* CHPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = B163FEE42B9136B75D09C96556A92BE6 /* CHPickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		912EB81741C47019F5F87A757E3487CA /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AE6053F45401E5A3DC7EF09B4622829 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9503BACAD6223932C004D65BE9A0CFF5 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B72740BC16C8CAF088B7DBF02CEE5549 /* NSArray+MASAdditions.m */; };
+		995ECC479A9B2E9CC1726297725B60F9 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E297CAD19AA9149420FDC9ED52AD0E3 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9D885EF6E1C58183AED6E6245417C643 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = DE1B7F9AAB024CF44528AAF44059343E /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A4021E52FD401D9F826EC69EB39CFD14 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCC5CEBA8D7035FC1BB56D47D61C769 /* Masonry-dummy.m */; };
+		B2EF097C66A36FB4A590612B80F05E85 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 930086A0764A06B5E95AE0C1865224FA /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B6E5158CE5608846D4E6E8162B1A0307 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 26BBFD3959A418B2D26F78323F175E48 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CE1DB78F22375EABA12F1F585341176E /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F0043257E42C8BFBF10290EA38ABBFB3 /* MASLayoutConstraint.m */; };
+		D3251105C77FAEB7842B7DBBEF740CD0 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = B4CF3DAEBDC017320AA11DC221BAC696 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DF52B2EC1B5B554CF6C09A1E6FD7C040 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F38154F2C400494FBADB6C5DF0C035C0 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		E27AB50D74C2EA808065D4542D4D5522 /* NSDate+CHDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 479D1126E7E79B84AC01A84115E8A3BB /* NSDate+CHDatePickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E30103F0CE1E50C367D312B04E577D5E /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = AC8C67AB00FEFC51C7FB7A7740E8BA23 /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E993D0DB4E7187E52A8FECB8567137F7 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FD0F587282F685149AAAE77D7107D49 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F708085C7E2508AC4B0930357977230C /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D4D4B93B33E7D482B6B4A64E5C05A49 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F893478A9EF85AD824E3C1A4B2CC8277 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = CDE569EB7CCA073F47D59453C7AE9405 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FDEA5CD05123E2123E745C13835A7BB4 /* NSDate+CHDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DF8BF5C25385CFE6ED0FFC1DE3819B /* NSDate+CHDatePickerView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44C9A2C236433F5057364CE6D0F2781E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+		527EA7111134A5FE6C7D2F93ACB978F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63EB7812637CBBE7AE73830CD78FD90E;
+			remoteInfo = CHDatePickerView;
+		};
+		64BACF7FC4F74FD8A8D2D542CEE99A3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03CEF71069FD354B243691B458653C23 /* CHDatePickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CHDatePickerView-dummy.m"; sourceTree = "<group>"; };
+		104B008D60D7E9018DBE61222C82AC37 /* Pods-xuankongDataPicker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-xuankongDataPicker-resources.sh"; sourceTree = "<group>"; };
+		104D9D9E2BC28C5D145EB3F5057EE9CE /* CHDatePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CHDatePickerView.h; path = CHDatePickerView/CHDatePickerView.h; sourceTree = "<group>"; };
+		106A0D04B1A2444D4AE543202223D585 /* CHDatePickerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CHDatePickerView.debug.xcconfig; sourceTree = "<group>"; };
+		19694D34D3CA1F5C25B321CF884FFC0D /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
+		1A53B096782B6DF4422AD584963AA2CC /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		1FD0F587282F685149AAAE77D7107D49 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		1FFED36A657123030ABB700256D73F15 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		257697C365B8103C268DAF1715AB4FFC /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
+		26BBFD3959A418B2D26F78323F175E48 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		3A656F55B05C7CAFF8E3C8AD01696CE8 /* Pods-xuankongDataPicker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-xuankongDataPicker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3D4D4B93B33E7D482B6B4A64E5C05A49 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		432687F2E9609EF7F31229256AB60ED9 /* CHDatePickerLocalizable.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = CHDatePickerLocalizable.bundle; path = CHDatePickerView/CHDatePickerLocalizable.bundle; sourceTree = "<group>"; };
+		433E84FFAD721F1EF7A5C60A4021672C /* CHDatePickerViewHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CHDatePickerViewHeader.h; path = CHDatePickerView/CHDatePickerViewHeader.h; sourceTree = "<group>"; };
+		479D1126E7E79B84AC01A84115E8A3BB /* NSDate+CHDatePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+CHDatePickerView.h"; path = "CHDatePickerView/NSDate+CHDatePickerView.h"; sourceTree = "<group>"; };
+		4843693AEF0855E07A78B95CBA9EA71C /* libPods-xuankongDataPicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-xuankongDataPicker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56CD17391A9A3F0CD626DD5E9F113BA4 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		5AE6053F45401E5A3DC7EF09B4622829 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		6E297CAD19AA9149420FDC9ED52AD0E3 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		75AFD98A6A1E5BE0060168AD5C5AE0DA /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		79F104724D1382191B72B8A94C5B0BA4 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		7B2098CEE8BF73FF64B6696C1C610F4E /* libCHDatePickerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCHDatePickerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		82976B6321D170986AEBB0C2CBEC7770 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		89A6181793C149E7F78384A7B2999F65 /* NSBundle+CHDatePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+CHDatePickerView.m"; path = "CHDatePickerView/NSBundle+CHDatePickerView.m"; sourceTree = "<group>"; };
+		930086A0764A06B5E95AE0C1865224FA /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		96DF315AAEDE0E495F4F43881792DF37 /* CHPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CHPickerView.m; path = CHDatePickerView/CHPickerView.m; sourceTree = "<group>"; };
+		9868BBE768B2125BCD6BA61A9AE6528D /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		99E87D8D36BBDD7D019707C579D80459 /* Pods-xuankongDataPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-xuankongDataPicker.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A21CF32F4D2A816C638424075DA29CE1 /* Pods-xuankongDataPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-xuankongDataPicker-dummy.m"; sourceTree = "<group>"; };
+		A2C8D94B1B115E60B42967A0F14B7586 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		A385DA1D2BDBE4D8764E3C4D69C5D8A8 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		AC8C67AB00FEFC51C7FB7A7740E8BA23 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		ADCC5CEBA8D7035FC1BB56D47D61C769 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		B163FEE42B9136B75D09C96556A92BE6 /* CHPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CHPickerView.h; path = CHDatePickerView/CHPickerView.h; sourceTree = "<group>"; };
+		B300F552CCD4D74DBF14AC5335B91A76 /* CHDatePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CHDatePickerView.m; path = CHDatePickerView/CHDatePickerView.m; sourceTree = "<group>"; };
+		B446F90EE6590A26CC9701D82BC09045 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		B4CF3DAEBDC017320AA11DC221BAC696 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
+		B72740BC16C8CAF088B7DBF02CEE5549 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		C12F6488595B5A0E5270EE75F3FE2344 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		C465729F060F6C12459E698FAFBC05ED /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		C6EE2054CE15B604CFE33F1E31BB080A /* Pods-xuankongDataPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-xuankongDataPicker.release.xcconfig"; sourceTree = "<group>"; };
+		CDE569EB7CCA073F47D59453C7AE9405 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		DC52F4E55733DF4158E8463730DFA28B /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		DE1B7F9AAB024CF44528AAF44059343E /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		E535435AA67D43193D61D3C1664517FB /* CHDatePickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHDatePickerView-prefix.pch"; sourceTree = "<group>"; };
+		E5DF8BF5C25385CFE6ED0FFC1DE3819B /* NSDate+CHDatePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+CHDatePickerView.m"; path = "CHDatePickerView/NSDate+CHDatePickerView.m"; sourceTree = "<group>"; };
+		E6F7D8FAB5937445CF53AE59D742702E /* Pods-xuankongDataPicker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-xuankongDataPicker-acknowledgements.plist"; sourceTree = "<group>"; };
+		EE7BC4539E60C5BF15ADAC616E2B256D /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		F0043257E42C8BFBF10290EA38ABBFB3 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
+		F38154F2C400494FBADB6C5DF0C035C0 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		FB72A4D26D011E9EABBF3FCE2E623A58 /* CHDatePickerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CHDatePickerView.release.xcconfig; sourceTree = "<group>"; };
+		FCDF39F19B4FA0BBC7F29B4F2CFB26B4 /* NSBundle+CHDatePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+CHDatePickerView.h"; path = "CHDatePickerView/NSBundle+CHDatePickerView.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		208F8417C6773BF9DB29D348F447F607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81281A67E4EAB75E9D1E1462C58501FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC248CC194BB58C13F8DFF888DFE2F71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EE66621FA254DAF045F26D6B7ED95CE /* CHDatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				104D9D9E2BC28C5D145EB3F5057EE9CE /* CHDatePickerView.h */,
+				B300F552CCD4D74DBF14AC5335B91A76 /* CHDatePickerView.m */,
+				433E84FFAD721F1EF7A5C60A4021672C /* CHDatePickerViewHeader.h */,
+				B163FEE42B9136B75D09C96556A92BE6 /* CHPickerView.h */,
+				96DF315AAEDE0E495F4F43881792DF37 /* CHPickerView.m */,
+				FCDF39F19B4FA0BBC7F29B4F2CFB26B4 /* NSBundle+CHDatePickerView.h */,
+				89A6181793C149E7F78384A7B2999F65 /* NSBundle+CHDatePickerView.m */,
+				479D1126E7E79B84AC01A84115E8A3BB /* NSDate+CHDatePickerView.h */,
+				E5DF8BF5C25385CFE6ED0FFC1DE3819B /* NSDate+CHDatePickerView.m */,
+				9030B5C6C633A192050EC712497A39BA /* Resources */,
+				CA0C8C4848BCDCFEA5C3F23EC1060C4B /* Support Files */,
+			);
+			path = CHDatePickerView;
+			sourceTree = "<group>";
+		};
+		4ED8286520D1B9FF5BC75F5FBAF56879 /* Pods-xuankongDataPicker */ = {
+			isa = PBXGroup;
+			children = (
+				3A656F55B05C7CAFF8E3C8AD01696CE8 /* Pods-xuankongDataPicker-acknowledgements.markdown */,
+				E6F7D8FAB5937445CF53AE59D742702E /* Pods-xuankongDataPicker-acknowledgements.plist */,
+				A21CF32F4D2A816C638424075DA29CE1 /* Pods-xuankongDataPicker-dummy.m */,
+				104B008D60D7E9018DBE61222C82AC37 /* Pods-xuankongDataPicker-resources.sh */,
+				99E87D8D36BBDD7D019707C579D80459 /* Pods-xuankongDataPicker.debug.xcconfig */,
+				C6EE2054CE15B604CFE33F1E31BB080A /* Pods-xuankongDataPicker.release.xcconfig */,
+			);
+			name = "Pods-xuankongDataPicker";
+			path = "Target Support Files/Pods-xuankongDataPicker";
+			sourceTree = "<group>";
+		};
+		6C9D79EBCBCC1FA3FDE3A19D1E340D66 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				DE1B7F9AAB024CF44528AAF44059343E /* MASCompositeConstraint.h */,
+				B446F90EE6590A26CC9701D82BC09045 /* MASCompositeConstraint.m */,
+				DC52F4E55733DF4158E8463730DFA28B /* MASConstraint.h */,
+				EE7BC4539E60C5BF15ADAC616E2B256D /* MASConstraint.m */,
+				A385DA1D2BDBE4D8764E3C4D69C5D8A8 /* MASConstraint+Private.h */,
+				B4CF3DAEBDC017320AA11DC221BAC696 /* MASConstraintMaker.h */,
+				56CD17391A9A3F0CD626DD5E9F113BA4 /* MASConstraintMaker.m */,
+				26BBFD3959A418B2D26F78323F175E48 /* MASLayoutConstraint.h */,
+				F0043257E42C8BFBF10290EA38ABBFB3 /* MASLayoutConstraint.m */,
+				AC8C67AB00FEFC51C7FB7A7740E8BA23 /* Masonry.h */,
+				82976B6321D170986AEBB0C2CBEC7770 /* MASUtilities.h */,
+				6E297CAD19AA9149420FDC9ED52AD0E3 /* MASViewAttribute.h */,
+				C465729F060F6C12459E698FAFBC05ED /* MASViewAttribute.m */,
+				CDE569EB7CCA073F47D59453C7AE9405 /* MASViewConstraint.h */,
+				C12F6488595B5A0E5270EE75F3FE2344 /* MASViewConstraint.m */,
+				1FD0F587282F685149AAAE77D7107D49 /* NSArray+MASAdditions.h */,
+				B72740BC16C8CAF088B7DBF02CEE5549 /* NSArray+MASAdditions.m */,
+				1A53B096782B6DF4422AD584963AA2CC /* NSArray+MASShorthandAdditions.h */,
+				930086A0764A06B5E95AE0C1865224FA /* NSLayoutConstraint+MASDebugAdditions.h */,
+				F38154F2C400494FBADB6C5DF0C035C0 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				79F104724D1382191B72B8A94C5B0BA4 /* View+MASAdditions.h */,
+				A2C8D94B1B115E60B42967A0F14B7586 /* View+MASAdditions.m */,
+				3D4D4B93B33E7D482B6B4A64E5C05A49 /* View+MASShorthandAdditions.h */,
+				5AE6053F45401E5A3DC7EF09B4622829 /* ViewController+MASAdditions.h */,
+				75AFD98A6A1E5BE0060168AD5C5AE0DA /* ViewController+MASAdditions.m */,
+				754D6232FA74ACE701F528E9A3048953 /* Support Files */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		754D6232FA74ACE701F528E9A3048953 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADCC5CEBA8D7035FC1BB56D47D61C769 /* Masonry-dummy.m */,
+				9868BBE768B2125BCD6BA61A9AE6528D /* Masonry-prefix.pch */,
+				19694D34D3CA1F5C25B321CF884FFC0D /* Masonry.debug.xcconfig */,
+				257697C365B8103C268DAF1715AB4FFC /* Masonry.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		7D7016682C278E2DF07FDE91E6E882D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B2098CEE8BF73FF64B6696C1C610F4E /* libCHDatePickerView.a */,
+				1FFED36A657123030ABB700256D73F15 /* libMasonry.a */,
+				4843693AEF0855E07A78B95CBA9EA71C /* libPods-xuankongDataPicker.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9030B5C6C633A192050EC712497A39BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				432687F2E9609EF7F31229256AB60ED9 /* CHDatePickerLocalizable.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A588FEBC7CBAC956928BBBEA941BEE78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EE66621FA254DAF045F26D6B7ED95CE /* CHDatePickerView */,
+				6C9D79EBCBCC1FA3FDE3A19D1E340D66 /* Masonry */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B7BD77117292ACE47E747122AFD9F420 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4ED8286520D1B9FF5BC75F5FBAF56879 /* Pods-xuankongDataPicker */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CA0C8C4848BCDCFEA5C3F23EC1060C4B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				03CEF71069FD354B243691B458653C23 /* CHDatePickerView-dummy.m */,
+				E535435AA67D43193D61D3C1664517FB /* CHDatePickerView-prefix.pch */,
+				106A0D04B1A2444D4AE543202223D585 /* CHDatePickerView.debug.xcconfig */,
+				FB72A4D26D011E9EABBF3FCE2E623A58 /* CHDatePickerView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CHDatePickerView";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				A588FEBC7CBAC956928BBBEA941BEE78 /* Pods */,
+				7D7016682C278E2DF07FDE91E6E882D2 /* Products */,
+				B7BD77117292ACE47E747122AFD9F420 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4CDFBE2CC0D34E2A5A3428066ABEBCAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81B3387602F4082372C463F2E3D5C6CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D885EF6E1C58183AED6E6245417C643 /* MASCompositeConstraint.h in Headers */,
+				3F8F593CC620C13790140FE0775324C0 /* MASConstraint+Private.h in Headers */,
+				431D0D1488E3FE45DBEB62F384810586 /* MASConstraint.h in Headers */,
+				D3251105C77FAEB7842B7DBBEF740CD0 /* MASConstraintMaker.h in Headers */,
+				B6E5158CE5608846D4E6E8162B1A0307 /* MASLayoutConstraint.h in Headers */,
+				E30103F0CE1E50C367D312B04E577D5E /* Masonry.h in Headers */,
+				6B3545D7FDF4347D1C13B01465E980A7 /* MASUtilities.h in Headers */,
+				995ECC479A9B2E9CC1726297725B60F9 /* MASViewAttribute.h in Headers */,
+				F893478A9EF85AD824E3C1A4B2CC8277 /* MASViewConstraint.h in Headers */,
+				E993D0DB4E7187E52A8FECB8567137F7 /* NSArray+MASAdditions.h in Headers */,
+				733719C9D53FAFF1B7E90A6112607323 /* NSArray+MASShorthandAdditions.h in Headers */,
+				B2EF097C66A36FB4A590612B80F05E85 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				2C6E4F559F0C6FB34267BA4A79C98383 /* View+MASAdditions.h in Headers */,
+				F708085C7E2508AC4B0930357977230C /* View+MASShorthandAdditions.h in Headers */,
+				912EB81741C47019F5F87A757E3487CA /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D204CA511243D0B6270CC12CC3B9E7BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D9C357AB88A8FCEBF6A3F258FB5B9AD /* CHDatePickerView.h in Headers */,
+				131823409B4A56E3B24074A3964C7E12 /* CHDatePickerViewHeader.h in Headers */,
+				8742C168AB15CDA84F2D36F108D150EE /* CHPickerView.h in Headers */,
+				6D2BC7620D3CE8657A5B91BEF49A5312 /* NSBundle+CHDatePickerView.h in Headers */,
+				E27AB50D74C2EA808065D4542D4D5522 /* NSDate+CHDatePickerView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		300CF3FCAE1F06FB8E4377563769804A /* Pods-xuankongDataPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F27DFADC095911620146F56CF793ACBF /* Build configuration list for PBXNativeTarget "Pods-xuankongDataPicker" */;
+			buildPhases = (
+				4CDFBE2CC0D34E2A5A3428066ABEBCAC /* Headers */,
+				2592B3C31E69F403A4E201E7FC678268 /* Sources */,
+				208F8417C6773BF9DB29D348F447F607 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B0BFC521123F2E52B00F4FF6CF59275 /* PBXTargetDependency */,
+				7DAC929829796DF0D637F6E464F32F3C /* PBXTargetDependency */,
+			);
+			name = "Pods-xuankongDataPicker";
+			productName = "Pods-xuankongDataPicker";
+			productReference = 4843693AEF0855E07A78B95CBA9EA71C /* libPods-xuankongDataPicker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 267409ECAB0DA0F6F70AB79CF839CB7D /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildPhases = (
+				81B3387602F4082372C463F2E3D5C6CA /* Headers */,
+				A9D8CBC66F54D2322A181A306810FFF7 /* Sources */,
+				BC248CC194BB58C13F8DFF888DFE2F71 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masonry;
+			productName = Masonry;
+			productReference = 1FFED36A657123030ABB700256D73F15 /* libMasonry.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		63EB7812637CBBE7AE73830CD78FD90E /* CHDatePickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2341DEBC614758ADC91380601172655 /* Build configuration list for PBXNativeTarget "CHDatePickerView" */;
+			buildPhases = (
+				D204CA511243D0B6270CC12CC3B9E7BF /* Headers */,
+				AE1E817005E7640182C003E174FC44E7 /* Sources */,
+				81281A67E4EAB75E9D1E1462C58501FB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0FD12C61C30EB76188F3BBF992BDEE1 /* PBXTargetDependency */,
+			);
+			name = CHDatePickerView;
+			productName = CHDatePickerView;
+			productReference = 7B2098CEE8BF73FF64B6696C1C610F4E /* libCHDatePickerView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 7D7016682C278E2DF07FDE91E6E882D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63EB7812637CBBE7AE73830CD78FD90E /* CHDatePickerView */,
+				55AF53E6C77A10ED4985E04D74A8878E /* Masonry */,
+				300CF3FCAE1F06FB8E4377563769804A /* Pods-xuankongDataPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2592B3C31E69F403A4E201E7FC678268 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B8FDB71DF43B5930551463FEDCE29D /* Pods-xuankongDataPicker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D8CBC66F54D2322A181A306810FFF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BA22E584AC6A798475D0AE0DAD99342 /* MASCompositeConstraint.m in Sources */,
+				1AAE978CCC63F733C5FD57D8B6614676 /* MASConstraint.m in Sources */,
+				08427136DA651C81F2B91B6C1B76A207 /* MASConstraintMaker.m in Sources */,
+				CE1DB78F22375EABA12F1F585341176E /* MASLayoutConstraint.m in Sources */,
+				A4021E52FD401D9F826EC69EB39CFD14 /* Masonry-dummy.m in Sources */,
+				14D104F6BFA9AB44C20F08D17D97CF6D /* MASViewAttribute.m in Sources */,
+				162A9F0E144DEFF2372D32C44B8ECB7C /* MASViewConstraint.m in Sources */,
+				9503BACAD6223932C004D65BE9A0CFF5 /* NSArray+MASAdditions.m in Sources */,
+				DF52B2EC1B5B554CF6C09A1E6FD7C040 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				625DC3FF19C25B82E02C4B28F0AB9F6D /* View+MASAdditions.m in Sources */,
+				5DB13EC969590B7B8F3DE013BF4CC8E6 /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE1E817005E7640182C003E174FC44E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40CA618AC2BF04FE3E3D10095CC838FC /* CHDatePickerView-dummy.m in Sources */,
+				54604C86408F1C8604EE24B784B4F8AE /* CHDatePickerView.m in Sources */,
+				757486D76638790C6D34116927E6DB53 /* CHPickerView.m in Sources */,
+				7A24364252B05317459A8B514907F5C3 /* NSBundle+CHDatePickerView.m in Sources */,
+				FDEA5CD05123E2123E745C13835A7BB4 /* NSDate+CHDatePickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B0BFC521123F2E52B00F4FF6CF59275 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CHDatePickerView;
+			target = 63EB7812637CBBE7AE73830CD78FD90E /* CHDatePickerView */;
+			targetProxy = 527EA7111134A5FE6C7D2F93ACB978F9 /* PBXContainerItemProxy */;
+		};
+		7DAC929829796DF0D637F6E464F32F3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 44C9A2C236433F5057364CE6D0F2781E /* PBXContainerItemProxy */;
+		};
+		D0FD12C61C30EB76188F3BBF992BDEE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 64BACF7FC4F74FD8A8D2D542CEE99A3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3EA5A4331C951700FB926B12EFFD8909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 106A0D04B1A2444D4AE543202223D585 /* CHDatePickerView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CHDatePickerView/CHDatePickerView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = CHDatePickerView;
+				PRODUCT_NAME = CHDatePickerView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4CE47CCDE9D9FE1A88FB932F1799A9AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB72A4D26D011E9EABBF3FCE2E623A58 /* CHDatePickerView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CHDatePickerView/CHDatePickerView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = CHDatePickerView;
+				PRODUCT_NAME = CHDatePickerView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BE3875271054EFB90ECF41101407441 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6EE2054CE15B604CFE33F1E31BB080A /* Pods-xuankongDataPicker.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9464983BEEC062DF904F3F0578FB4D68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 257697C365B8103C268DAF1715AB4FFC /* Masonry.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD5DC7312CA32F7C09F7DF1853721713 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99E87D8D36BBDD7D019707C579D80459 /* Pods-xuankongDataPicker.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA572396AF47F2A34E3463C7875DDAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19694D34D3CA1F5C25B321CF884FFC0D /* Masonry.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		267409ECAB0DA0F6F70AB79CF839CB7D /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA572396AF47F2A34E3463C7875DDAF1 /* Debug */,
+				9464983BEEC062DF904F3F0578FB4D68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2341DEBC614758ADC91380601172655 /* Build configuration list for PBXNativeTarget "CHDatePickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EA5A4331C951700FB926B12EFFD8909 /* Debug */,
+				4CE47CCDE9D9FE1A88FB932F1799A9AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F27DFADC095911620146F56CF793ACBF /* Build configuration list for PBXNativeTarget "Pods-xuankongDataPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5DC7312CA32F7C09F7DF1853721713 /* Debug */,
+				5BE3875271054EFB90ECF41101407441 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

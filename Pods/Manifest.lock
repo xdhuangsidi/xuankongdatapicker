@@ -1,0 +1,21 @@
+PODS:
+  - CHDatePickerView (0.2.0):
+    - Masonry
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - CHDatePickerView
+  - Masonry
+
+SPEC REPOS:
+  trunk:
+    - CHDatePickerView
+    - Masonry
+
+SPEC CHECKSUMS:
+  CHDatePickerView: 5f954d8716ea544b7df206e3424bc4a84dad0d26
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 90df8a2769464b0310f8820538eb4b3169f6bb34
+
+COCOAPODS: 1.9.3

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		91C1FB3F92A635164BC0EAE3 /* Pods-xuankongDataPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xuankongDataPicker.release.xcconfig"; path = "Target Support Files/Pods-xuankongDataPicker/Pods-xuankongDataPicker.release.xcconfig"; sourceTree = "<group>"; };
 		D84D054824CAA4DC00625231 /* xuankongDataPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xuankongDataPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D84D054B24CAA4DC00625231 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D84D054C24CAA4DC00625231 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +30,7 @@
 		D84D055A24CAA4DC00625231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D84D055C24CAA4DC00625231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D84D055D24CAA4DC00625231 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE7A959F52ECAC90862776B6 /* Pods-xuankongDataPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xuankongDataPicker.debug.xcconfig"; path = "Target Support Files/Pods-xuankongDataPicker/Pods-xuankongDataPicker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,11 +44,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		058A81CA197843389463456A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D84D053F24CAA4DC00625231 = {
 			isa = PBXGroup;
 			children = (
 				D84D054A24CAA4DC00625231 /* xuankongDataPicker */,
 				D84D054924CAA4DC00625231 /* Products */,
+				DC6E818ABD4F1F783CF973EB /* Pods */,
+				058A81CA197843389463456A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +72,7 @@
 		D84D054A24CAA4DC00625231 /* xuankongDataPicker */ = {
 			isa = PBXGroup;
 			children = (
+				D84D056424CAA66100625231 /* New Group */,
 				D84D054B24CAA4DC00625231 /* AppDelegate.h */,
 				D84D054C24CAA4DC00625231 /* AppDelegate.m */,
 				D84D054E24CAA4DC00625231 /* SceneDelegate.h */,
@@ -76,6 +88,22 @@
 			path = xuankongDataPicker;
 			sourceTree = "<group>";
 		};
+		D84D056424CAA66100625231 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		DC6E818ABD4F1F783CF973EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE7A959F52ECAC90862776B6 /* Pods-xuankongDataPicker.debug.xcconfig */,
+				91C1FB3F92A635164BC0EAE3 /* Pods-xuankongDataPicker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D84D056124CAA4DC00625231 /* Build configuration list for PBXNativeTarget "xuankongDataPicker" */;
 			buildPhases = (
+				11E482914B1F569B841D397D /* [CP] Check Pods Manifest.lock */,
 				D84D054424CAA4DC00625231 /* Sources */,
 				D84D054524CAA4DC00625231 /* Frameworks */,
 				D84D054624CAA4DC00625231 /* Resources */,
+				91067C7260827C462E7942E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,6 +170,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11E482914B1F569B841D397D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-xuankongDataPicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91067C7260827C462E7942E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xuankongDataPicker/Pods-xuankongDataPicker-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-xuankongDataPicker/Pods-xuankongDataPicker-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-xuankongDataPicker/Pods-xuankongDataPicker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D84D054424CAA4DC00625231 /* Sources */ = {
@@ -287,6 +359,7 @@
 		};
 		D84D056224CAA4DC00625231 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE7A959F52ECAC90862776B6 /* Pods-xuankongDataPicker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +369,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Masonry\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = sidi.xuankongDataPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,6 +386,7 @@
 		};
 		D84D056324CAA4DC00625231 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91C1FB3F92A635164BC0EAE3 /* Pods-xuankongDataPicker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,6 +395,15 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Masonry\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"UIKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sidi.xuankongDataPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
