@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D84D054D24CAA4DC00625231 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D84D054C24CAA4DC00625231 /* AppDelegate.m */; };
-		D84D055024CAA4DC00625231 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D84D054F24CAA4DC00625231 /* SceneDelegate.m */; };
-		D84D055324CAA4DC00625231 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84D055224CAA4DC00625231 /* ViewController.m */; };
+		D84D054D24CAA4DC00625231 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D84D054C24CAA4DC00625231 /* AppDelegate.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D84D055024CAA4DC00625231 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D84D054F24CAA4DC00625231 /* SceneDelegate.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D84D055324CAA4DC00625231 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84D055224CAA4DC00625231 /* ViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		D84D055624CAA4DC00625231 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84D055424CAA4DC00625231 /* Main.storyboard */; };
 		D84D055824CAA4DC00625231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84D055724CAA4DC00625231 /* Assets.xcassets */; };
 		D84D055B24CAA4DC00625231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84D055924CAA4DC00625231 /* LaunchScreen.storyboard */; };
 		D84D055E24CAA4DC00625231 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D84D055D24CAA4DC00625231 /* main.m */; };
 		D8FB8E6D24CAB6C40075445C /* SwissEphemeris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FB8E6C24CAB6C40075445C /* SwissEphemeris.framework */; };
+		D8FB8E9924CAFE4A0075445C /* XKOutputResultData.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FB8E9824CAFE4A0075445C /* XKOutputResultData.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D8FB8E9D24CB083D0075445C /* XKConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FB8E9C24CB083D0075445C /* XKConstant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		D84D055C24CAA4DC00625231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D84D055D24CAA4DC00625231 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D8FB8E6C24CAB6C40075445C /* SwissEphemeris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwissEphemeris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8FB8E9724CAFE4A0075445C /* XKOutputResultData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKOutputResultData.h; sourceTree = "<group>"; };
+		D8FB8E9824CAFE4A0075445C /* XKOutputResultData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKOutputResultData.m; sourceTree = "<group>"; };
+		D8FB8E9B24CB083D0075445C /* XKConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKConstant.h; sourceTree = "<group>"; };
+		D8FB8E9C24CB083D0075445C /* XKConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKConstant.m; sourceTree = "<group>"; };
 		DE7A959F52ECAC90862776B6 /* Pods-xuankongDataPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xuankongDataPicker.debug.xcconfig"; path = "Target Support Files/Pods-xuankongDataPicker/Pods-xuankongDataPicker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +82,9 @@
 		D84D054A24CAA4DC00625231 /* xuankongDataPicker */ = {
 			isa = PBXGroup;
 			children = (
-				D84D056424CAA66100625231 /* New Group */,
+				D8FB8E9A24CB07DA0075445C /* Constant */,
+				D8FB8E9624CAFE0B0075445C /* Data */,
+				D84D056424CAA66100625231 /* Utils */,
 				D84D054B24CAA4DC00625231 /* AppDelegate.h */,
 				D84D054C24CAA4DC00625231 /* AppDelegate.m */,
 				D84D054E24CAA4DC00625231 /* SceneDelegate.h */,
@@ -92,11 +100,29 @@
 			path = xuankongDataPicker;
 			sourceTree = "<group>";
 		};
-		D84D056424CAA66100625231 /* New Group */ = {
+		D84D056424CAA66100625231 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "New Group";
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D8FB8E9624CAFE0B0075445C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D8FB8E9724CAFE4A0075445C /* XKOutputResultData.h */,
+				D8FB8E9824CAFE4A0075445C /* XKOutputResultData.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D8FB8E9A24CB07DA0075445C /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				D8FB8E9B24CB083D0075445C /* XKConstant.h */,
+				D8FB8E9C24CB083D0075445C /* XKConstant.m */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 		DC6E818ABD4F1F783CF973EB /* Pods */ = {
@@ -222,9 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8FB8E9D24CB083D0075445C /* XKConstant.m in Sources */,
 				D84D055324CAA4DC00625231 /* ViewController.m in Sources */,
 				D84D054D24CAA4DC00625231 /* AppDelegate.m in Sources */,
 				D84D055E24CAA4DC00625231 /* main.m in Sources */,
+				D8FB8E9924CAFE4A0075445C /* XKOutputResultData.m in Sources */,
 				D84D055024CAA4DC00625231 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -325,7 +325,7 @@
     self.buttonConfirm = [UIButton new];
     [self.buttonConfirm setTitle:[NSBundle ch_localizedStringForKey:@"Confirm"] forState:UIControlStateNormal];
     self.buttonConfirm.titleLabel.font = [UIFont systemFontOfSize:18];
-    [self.buttonConfirm setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [self.buttonConfirm setTitleColor:[UIColor colorWithRed:65/255.0 green:127/255.0 blue:249/255.0 alpha:1] forState:UIControlStateNormal];
     [self.viewButtonBackground addSubview:self.buttonConfirm];
     [self.buttonConfirm mas_makeConstraints:^(MASConstraintMaker *make) {
         if (@available(iOS 11.0, *)) {
