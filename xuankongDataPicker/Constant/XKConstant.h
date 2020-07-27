@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface XKConstant : NSObject
 + (NSString *)tianGan:(NSUInteger)count;
 + (NSString *)diZhi:(NSUInteger)count;
++ (NSString *)guaNameWithUp:(NSUInteger)up Down:(NSUInteger)down;
++ (NSString *)houTianSingGua:(NSUInteger)up;
 @end
 
 NS_ASSUME_NONNULL_END

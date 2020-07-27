@@ -198,6 +198,9 @@ double swe_julday1(int year, int month, int day, double hour, double min, int gr
   jd = floor(u0*365.25)
      + floor(30.6*u1+0.000001)
     + day + hour/24.0 + min/1440.0 - 63.5;
+    
+  // 此时的jd是东八区的jd，要换算成0时区的jd才能降低误差，需要 -8小时
+    jd = jd - 8/24.0;
   if (gregflag == SE_GREG_CAL) {
     u2 = floor(fabs(u) / 100) - floor(fabs(u) / 400);
     if (u < 0.0) u2 = -u2;

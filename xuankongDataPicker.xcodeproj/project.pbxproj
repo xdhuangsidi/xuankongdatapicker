@@ -14,10 +14,26 @@
 		D84D055824CAA4DC00625231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84D055724CAA4DC00625231 /* Assets.xcassets */; };
 		D84D055B24CAA4DC00625231 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84D055924CAA4DC00625231 /* LaunchScreen.storyboard */; };
 		D84D055E24CAA4DC00625231 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D84D055D24CAA4DC00625231 /* main.m */; };
-		D8FB8E6D24CAB6C40075445C /* SwissEphemeris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8FB8E6C24CAB6C40075445C /* SwissEphemeris.framework */; };
+		D8D52E2624CEA67500BAE9BD /* SwissEphemeris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D52E2424CEA58C00BAE9BD /* SwissEphemeris.framework */; };
+		D8D52E2724CEA67500BAE9BD /* SwissEphemeris.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8D52E2424CEA58C00BAE9BD /* SwissEphemeris.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D8FB8E9924CAFE4A0075445C /* XKOutputResultData.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FB8E9824CAFE4A0075445C /* XKOutputResultData.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		D8FB8E9D24CB083D0075445C /* XKConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FB8E9C24CB083D0075445C /* XKConstant.m */; };
+		D8FB8EA524CC64FA0075445C /* XKDateGanzhiCaluateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FB8EA424CC64FA0075445C /* XKDateGanzhiCaluateUtil.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D8D52E2824CEA67500BAE9BD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D8D52E2724CEA67500BAE9BD /* SwissEphemeris.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		91C1FB3F92A635164BC0EAE3 /* Pods-xuankongDataPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xuankongDataPicker.release.xcconfig"; path = "Target Support Files/Pods-xuankongDataPicker/Pods-xuankongDataPicker.release.xcconfig"; sourceTree = "<group>"; };
@@ -33,11 +49,13 @@
 		D84D055A24CAA4DC00625231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D84D055C24CAA4DC00625231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D84D055D24CAA4DC00625231 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D8FB8E6C24CAB6C40075445C /* SwissEphemeris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwissEphemeris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D52E2424CEA58C00BAE9BD /* SwissEphemeris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwissEphemeris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FB8E9724CAFE4A0075445C /* XKOutputResultData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKOutputResultData.h; sourceTree = "<group>"; };
 		D8FB8E9824CAFE4A0075445C /* XKOutputResultData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKOutputResultData.m; sourceTree = "<group>"; };
 		D8FB8E9B24CB083D0075445C /* XKConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKConstant.h; sourceTree = "<group>"; };
 		D8FB8E9C24CB083D0075445C /* XKConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKConstant.m; sourceTree = "<group>"; };
+		D8FB8EA324CC64FA0075445C /* XKDateGanzhiCaluateUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKDateGanzhiCaluateUtil.h; sourceTree = "<group>"; };
+		D8FB8EA424CC64FA0075445C /* XKDateGanzhiCaluateUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKDateGanzhiCaluateUtil.m; sourceTree = "<group>"; };
 		DE7A959F52ECAC90862776B6 /* Pods-xuankongDataPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xuankongDataPicker.debug.xcconfig"; path = "Target Support Files/Pods-xuankongDataPicker/Pods-xuankongDataPicker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8FB8E6D24CAB6C40075445C /* SwissEphemeris.framework in Frameworks */,
+				D8D52E2624CEA67500BAE9BD /* SwissEphemeris.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +74,7 @@
 		058A81CA197843389463456A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D8FB8E6C24CAB6C40075445C /* SwissEphemeris.framework */,
+				D8D52E2424CEA58C00BAE9BD /* SwissEphemeris.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -103,6 +121,8 @@
 		D84D056424CAA66100625231 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D8FB8EA324CC64FA0075445C /* XKDateGanzhiCaluateUtil.h */,
+				D8FB8EA424CC64FA0075445C /* XKDateGanzhiCaluateUtil.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -146,6 +166,7 @@
 				D84D054524CAA4DC00625231 /* Frameworks */,
 				D84D054624CAA4DC00625231 /* Resources */,
 				91067C7260827C462E7942E7 /* [CP] Copy Pods Resources */,
+				D8D52E2824CEA67500BAE9BD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,6 +275,7 @@
 				D84D055E24CAA4DC00625231 /* main.m in Sources */,
 				D8FB8E9924CAFE4A0075445C /* XKOutputResultData.m in Sources */,
 				D84D055024CAA4DC00625231 /* SceneDelegate.m in Sources */,
+				D8FB8EA524CC64FA0075445C /* XKDateGanzhiCaluateUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +351,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -381,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
