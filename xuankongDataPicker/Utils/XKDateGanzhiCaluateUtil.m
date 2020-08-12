@@ -289,7 +289,7 @@ static XKDateGanzhiCaluateUtil *SINGLETON = nil;
     if        (total == 99 || total == 44 || total == 33 || total == 88 || total == 22 || total == 77 || total == 66 || total == 11) {
         guaYun = @"一";
         guaIndex = 1;
-    } else if (total == 19 || total == 19 || total == 46 || total == 64 || total == 73 || total == 37 || total == 28 || total == 82) {
+    } else if (total == 91 || total == 19 || total == 46 || total == 64 || total == 73 || total == 37 || total == 28 || total == 82) {
         guaYun = @"九";
         guaIndex = 9;
     } else if (total == 98 || total == 89 || total == 43 || total == 34 || total == 21 || total == 12 || total == 76 || total == 67) {

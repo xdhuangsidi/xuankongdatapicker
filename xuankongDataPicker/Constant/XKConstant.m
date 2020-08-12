@@ -2,7 +2,7 @@
 //  XKConstant.m
 //  xuankongDataPicker
 //
-//  Created by kingsoft on 2020/7/24.
+//  Created by huangsidi on 2020/7/24.
 //  Copyright © 2020 huang. All rights reserved.
 //
 
@@ -151,7 +151,7 @@
     static NSArray<NSString *> *kunArray = nil;
      if (kunArray == nil) {
                       //0    1    2      3     4    5     6    7    8     9
-         kunArray = @[@"-",@"萃",@"大过",@"革",@"兑",@"-",@"咸",@"未济",@"随",@"夬"];
+         kunArray = @[@"-",@"萃",@"大过",@"革",@"兑",@"-",@"咸",@"困",@"随",@"夬"];
      }
     return kunArray[down];
 }

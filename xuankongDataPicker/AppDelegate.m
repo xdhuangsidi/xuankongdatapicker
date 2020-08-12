@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  xuankongDataPicker
 //
-//  Created by kingsoft on 2020/7/24.
+//  Created by kingsohuangsidi on 2020/7/24.
 //  Copyright © 2020 huang. All rights reserved.
 //
 
