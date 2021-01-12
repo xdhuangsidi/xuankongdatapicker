@@ -7,3 +7,6 @@ iOS上的玄空择日工具，将日期的年月日时转化为玄空卦的工�
 干支所属的玄空卦
 玄空卦运
 玄空卦所属的后天卦
+
+![avatar](https://raw.githubusercontent.com/xdhuangsidi/xuankongdatapicker/master/pic.png)
+
