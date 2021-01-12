@@ -95,6 +95,9 @@ static XKDateGanzhiCaluateUtil *SINGLETON = nil;
     // 甲己默认 丙上起
     // 简洁算法 beginZhi = ((yearGan % 5 + 1) * 2) % 10
     NSUInteger beginZhi = 2;
+    if (monthDizhi == 1 || monthDizhi == 0) {
+        yearGan++;
+    }
     switch (yearGan) {
         case 1:
         case 6:
@@ -160,11 +163,12 @@ static XKDateGanzhiCaluateUtil *SINGLETON = nil;
  日地支的结果依赖于天干，所以一起算
  */
 - (XKOutputResultData *)caluateDayGanAndZhi:(NSUInteger)year month:(NSUInteger)month day:(NSUInteger)day hour:(NSUInteger)hour {
-    NSUInteger x = year / 100;
-    NSUInteger y = year % 100;
     if (month <= 2) {
         month = month + 12;
+        year--;
     }
+    NSUInteger x = year / 100;
+    NSUInteger y = year % 100;
     NSUInteger G = 5 * (x + y) + (x / 4) + (y / 4) + (month + 1) * 3 / 5 + day - 3 - x;
     NSUInteger Z = G + 4 * x + 10 + (month % 2 == 0 ? 6 : 0);
     
